@@ -1,4 +1,4 @@
-#include <iostream>
+/*#include <iostream>
 using namespace std;
 void init(int* array, int size) {
 
@@ -26,4 +26,4 @@ int main()
 	cout << endl;
 	delete[] array;
 	return 0;
-}
+}*/
