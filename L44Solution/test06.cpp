@@ -1,9 +1,10 @@
-/*#include <iostream>
+#include <iostream>
 using namespace std;
 void init(int* array, int size) {
 
 }
-int* test() {
+int* test(int* size) {
+	*size = 5;
 	int* array = new int[5];
 	*(array) = 1;
 	*(array + 1) = 11;
@@ -15,13 +16,14 @@ int* test() {
 
 int main()
 {
-	int* array = test();
+	int size;
+	int* array = test(&size);
 
-	for (int i = 0; i < 5; i++)
+	for (int i = 0; i < size; i++)
 	{
 		cout << array[i] << " ";
 	}
 	cout << endl;
 	delete[] array;
 	return 0;
-}*/
+}
